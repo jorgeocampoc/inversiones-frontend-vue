@@ -1,0 +1,318 @@
+@import './base.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap'); */
+ 
+.btn-gray {
+    background-color: var(--gray-color) !important;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+.btn-blue {
+    background-color: var(--gray-color) !important;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  .btn-blue:hover{
+    border: 1px solid var(--white-anti-flash-color) !important;
+
+  }
+  .btn-red:hover{
+    border: 1px solid var(--white-anti-flash-color) !important;
+
+  }
+
+  
+.btn-red {
+    background-color: var(--red-color) !important;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  .btn-orange {
+    background-color: var(--yellow-orange) !important;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.5s ease !important;
+  }
+
+  .btn-orange:hover{
+    background-color: var(--gray-color) !important;
+    color: var(--white-anti-flash-color) !important;
+    border: 1px solid var(--white-anti-flash-color) !important;
+
+  }
+
+
+  .btn-gray:hover {
+    background-color: var(--yellow-orange) !important;
+    color: var(--white-anti-flash-color) !important;
+    border: 1px solid var(--white-anti-flash-color) !important;
+  }
+
+  .btn-outline-gray {
+    --bs-btn-color: var(--gray-color);  
+    --bs-btn-border-color: var(--gray-color);  
+    --bs-btn-hover-color: var(--white-anti-flash-color);  
+    --bs-btn-hover-bg: var(--gray-color);  
+    --bs-btn-hover-border-color: var(--gray-color);  
+    border: 1px solid var(--gray-color) !important;
+  }
+
+  .alert-gray {
+    background-color: var(--gray-color) !important;
+    color: var(--white-anti-flash-color) !important;
+    padding: 0.75rem 1.25rem !important;
+    border: 1px solid var(--gray-color) !important;
+    border-radius: 0.25rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.shadow-custom-1{
+  box-shadow: -3px 0px 8px 0px var(--gray-color);
+}
+
+.underline{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.cursor-blocked{
+  cursor:not-allowed;
+}
+
+.color-gray{
+  color: var(--gray-color) !important;
+}
+.bg-gray{
+  background-color: var(--gray-color) !important;
+}
+
+.bg-orange{
+  background-color: var(--yellow-orange) !important; 
+    color: white;
+}
+.custom-absolute {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+.cursor{
+  cursor: pointer !important;
+}
+
+
+.text-orange {
+  color: var(--yellow-orange) !important; /* Color amarillo de Bootstrap */
+}
+
+
+.colored-toast.swal2-icon-success {
+  background-color: #198754 !important;
+}
+
+.colored-toast.swal2-icon-error {
+  background-color: #dc3545 !important;
+}
+
+.colored-toast.swal2-icon-warning {
+  background-color: var(--yellow-orange) !important;
+}
+
+.colored-toast.swal2-icon-info {
+  background-color: #3fc3ee !important;
+}
+
+.colored-toast.swal2-icon-question {
+  background-color: #87adbd !important;
+}
+
+.colored-toast .swal2-title {
+  color: white;
+}
+
+.colored-toast .swal2-close {
+  color: white;
+}
+
+.colored-toast .swal2-html-container {
+  color: white;
+}
+
+
+
+.blink-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: blink 1s infinite; 
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; } 
+  50% { opacity: 0; }     
+}
+
+
+
+.title {
+  font-family: var(--font-montserrat-bold); 
+  font-weight: 700; 
+  font-size: 30px; 
+  color: var( --gray-color); 
+  text-transform: uppercase;
+}
+
+.text-bg-orange {
+  background-color: #D95C00 !important; 
+}
+
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+textarea::-webkit-scrollbar {
+  display: none; /* Ocultar la barra de desplazamiento en navegadores webkit */
+}
+
+/* Para Firefox */
+textarea {
+  scrollbar-width: none; /* Eliminar barra de desplazamiento en Firefox */
+}
+
+
+.td-custom{
+  background-color: var(--yellow-orange) !important;
+  color: white !important;
+  text-align: center;
+}
+
+
+.modal-title {
+  font-family: var(--font-montserrat-bold);
+  /* Variante bold */
+  font-weight: 700;
+  /* Asegura que sea bold */
+  font-size: 24px;
+  /* Tamaño predefinido */
+  color: var(--gray-color);
+  text-transform: uppercase;
+}
+.modal-header {
+  background-color: var(--dun2-color);
+  border-bottom: none;
+  padding: 1rem !important;
+}
+.modal-footer {
+  background-color: var(--gray-color) !important;
+  border-bottom: none;
+  padding: 1rem !important;
+}
+
+.modal-content {
+  background-color: transparent !important;
+  /* Hacerlo transparente */
+  box-shadow: none;
+  /* Quitar sombras si no las quieres */
+  border: none;
+  /* Quitar bordes */
+}
+
+.modal-body {
+  background-color: var(--blue-transparent) !important;
+  color: var(--white-color);
+}
+
+.alert-orange {
+  background-color: var(--yellow-orange) !important;
+  color: white !important;           
+  border: 1px solid #e67e22; 
+  padding: 10px 20px;       
+  border-radius: 4px;       
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+
+.hover-button:hover{
+  font-size: 0.8rem !important;
+  transform: scale(1.2) !important;
+}
+.hover-button{
+  transition: transform 0.3s ease-in !important;
+
+}
+
+.btn-6 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  color: var(--gray-color);
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+.bg-degrade-inverso {
+  background: linear-gradient(to left, var(--gray-color), rgb(101, 126, 197));
+}
+
+.bg-degrade {
+  background: linear-gradient(to right, var(--gray-color), rgb(101, 126, 197));
+}
+
+.btn-6 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  color: var(--gray-color);
+  transition: color 0.4s ease-in-out, background-color 0.6s ease-in-out;
+}
+
+.btn-6 span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: var(--gray-color);
+  transition: width 0.6s ease-in-out, height 0.6s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.btn-6:hover {
+  color: var(--white-anti-flash-color);
+}
+
+.btn-6:hover span {
+  width: 225%;
+  height: 562.5px;
+}
