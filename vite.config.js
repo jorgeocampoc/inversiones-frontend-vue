@@ -1,5 +1,4 @@
 import { fileURLToPath, URL } from 'node:url'
-
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
@@ -10,8 +9,8 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
   },
   build: {
     target: 'esnext',
@@ -23,6 +22,10 @@ export default defineConfig({
         manualChunks: undefined,
       },
     },
-  }
- 
+  },
+  server: {
+    host: '0.0.0.0', // Escucha en todas las interfaces de red
+    port: 8080, // O el puerto que prefieras
+    open: true, // Opcional: abre el navegador automáticamente
+  },
 })
